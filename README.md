@@ -4,6 +4,9 @@ This userscript adds custom keyboard shortcuts to miro for quick color and pen c
 
 ![](img/miro_selector.drawio.png)
 
+To install this script, add `https://github.com/DirkHeinke/miro-keyboard-shortcuts-userscript/raw/master/dist/index.user.js
+` to [Violentmonkey](https://violentmonkey.github.io/) or [Tampermonkey](https://www.tampermonkey.net/).
+
 The default shortcuts are:
 | Shortcut | Function |
 | --- | --- |
@@ -25,7 +28,7 @@ The default shortcuts are:
 
 ## Modify Shortcuts
 
-You can replace them by changing the userscript value with the key `shortcuts_v1`.
+You can replace them by changing the userscript value with the key `shortcuts_v1`. To edit this in Tampermonkey, set the config mode to `Advanced`.
 
 The first string is the shortcut. Most combinations are already used by browser or OS. For details on the format see [here](https://github.com/violentmonkey/vm-shortcut).
 

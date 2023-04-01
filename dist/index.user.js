@@ -8,6 +8,7 @@
 // @author      Dirk Heinke
 // @grant       GM_addStyle
 // @grant       GM_getValue
+// @grant       GM_setValue
 // ==/UserScript==
 
 (function () {
@@ -415,6 +416,7 @@ function observe(node, callback, options) {
 console.log('MSS - Starting miro shortcut script');
 const defaultShortcuts = [['c-a-s-q', 'selectColor', 0], ['c-a-s-w', 'selectColor', 1], ['c-a-s-e', 'selectColor', 2], ['c-a-s-r', 'selectColor', 3], ['c-a-s-a', 'selectColor', 4], ['c-a-s-s', 'selectColor', 5], ['c-a-s-d', 'selectColor', 6], ['c-a-s-f', 'selectColor', 7], ['c-a-s-y', 'selectColor', 16], ['c-a-s-x', 'selectColor', 17], ['c-a-s-c', 'selectColor', 18], ['c-a-s-v', 'selectColor', 19], ['c-a-s-t', 'selectPen', 0], ['c-a-s-g', 'selectPen', 1], ['c-a-s-b', 'selectPen', 2]];
 const shortcuts = GM_getValue('shortcuts_v1', defaultShortcuts);
+GM_setValue('shortcuts_vDEFAULT', defaultShortcuts);
 shortcuts.forEach(sc => {
   register(sc[0], async () => {
     console.log('MSS - Shortcut', sc[0]);

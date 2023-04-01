@@ -24,6 +24,7 @@ const defaultShortcuts: [string, functionNames, any][] = [
 ];
 
 const shortcuts = GM_getValue('shortcuts_v1', defaultShortcuts);
+GM_setValue('shortcuts_vDEFAULT', defaultShortcuts);
 
 shortcuts.forEach((sc) => {
   register(sc[0], async () => {
