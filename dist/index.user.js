@@ -4,7 +4,7 @@
 // @namespace   Violentmonkey Scripts
 // @description Adds shortcuts for color selection.
 // @match       https://miro.com/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Dirk Heinke
 // @grant       GM_addStyle
 // @grant       GM_getValue
